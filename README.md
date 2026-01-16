@@ -1,10 +1,13 @@
 # 🌸 Diary App – Flutter CRUD Application
 
-## 🖼️ Screenshot Aplikasi
+## Screenshot Aplikasi
 
 ### 1️⃣ Halaman Login
-Halaman awal aplikasi yang digunakan pengguna untuk **masuk ke aplikasi** menggunakan akun yang telah terdaftar.  
-Data username dan password diverifikasi melalui database lokal SQLite.
+Halaman awal aplikasi yang digunakan pengguna untuk masuk ke aplikasi.
+Pengguna memasukkan username dan password yang telah dibuat sebelumnya.
+
+Jika data sesuai, pengguna akan diarahkan ke halaman utama aplikasi.
+Status login pengguna kemudian disimpan menggunakan SharedPreferences untuk menjaga sesi login selama aplikasi digunakan.
 
 ![Login Page](screenshots/1login.png)
 
@@ -86,22 +89,33 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 - ✏️ Update Diary
 - 🗑️ Delete Diary
 - 💾 Local Storage (SQLite / sqflite)
+- 🔐 Session Login (SharedPreferences)
 - 🎨 UI Modern & Estetik
 
 ---
 
-## 🔐 Penjelasan Login & Register
+## 🔐 Penjelasan Login, Register & SharedPreferences
 
 ### ✅ Register
 - Pengguna membuat akun baru
-- Data username dan password disimpan ke database SQLite
+- Data username dan password disimpan ke **database lokal SQLite**
 
 ### ✅ Login
 - Pengguna login menggunakan akun terdaftar
-- Data diverifikasi dari database lokal
+- Data diverifikasi dari database lokal SQLite
 - Jika valid, pengguna diarahkan ke halaman utama diary
 
-📌 Sistem autentikasi **tidak menggunakan backend atau cloud**, sesuai dengan ketentuan tugas.
+### ✅ SharedPreferences (Session Management)
+Aplikasi ini menggunakan **SharedPreferences** untuk:
+- Menyimpan **status login pengguna**
+- Menyimpan **username user yang sedang aktif**
+- Mendukung fitur **auto login** saat aplikasi dibuka kembali
+
+📌 **SharedPreferences hanya digunakan untuk data kecil (session login)**  
+📌 **Data utama seperti user dan diary tetap disimpan di SQLite**
+
+Sistem autentikasi **tidak menggunakan backend, API, atau cloud**,  
+sesuai dengan ketentuan tugas **local storage sederhana**.
 
 ---
 
@@ -110,6 +124,7 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 - Flutter
 - Dart
 - sqflite (SQLite Local Database)
+- shared_preferences
 - path_provider
 - Material Design
 
@@ -124,6 +139,7 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 | Update | Edit Diary |
 | Delete | Hapus Diary |
 | Storage | SQLite (Local Storage) |
+| Session | SharedPreferences |
 
 ---
 
@@ -131,7 +147,8 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 
 - Aplikasi bersifat **offline**
 - Tidak menggunakan hosting, API, atau cloud
-- Seluruh data disimpan secara **local storage (SQLite)**
+- Seluruh data disimpan secara **local storage**
+- SharedPreferences digunakan hanya untuk **manajemen session login**
 
 ---
 
