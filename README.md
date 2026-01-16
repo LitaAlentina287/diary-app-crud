@@ -156,7 +156,7 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 ## 🛠️ Teknologi yang Digunakan
 
 - Flutter
-Framework utama untuk membangun aplikasi mobile.
+  Framework utama untuk membangun aplikasi mobile.
 
 - Dart
 Bahasa pemrograman yang digunakan oleh Flutter.
