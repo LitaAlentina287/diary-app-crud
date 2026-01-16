@@ -155,37 +155,36 @@ Project ini dibuat untuk memenuhi tugas **CRUD (Create, Read, Update, Delete)** 
 
 ## 🛠️ Teknologi yang Digunakan
 
-- Flutter
+- **Flutter**  
   Framework utama untuk membangun aplikasi mobile.
 
-- Dart
-Bahasa pemrograman yang digunakan oleh Flutter.
+- **Dart**  
+  Bahasa pemrograman yang digunakan oleh Flutter.
 
-- sqflite (SQLite Local Database)
-Digunakan untuk menyimpan dan mengelola data diary secara lokal (CRUD).
+- **sqflite (SQLite Local Database)**  
+  Digunakan untuk menyimpan dan mengelola data diary secara lokal (CRUD).
 
-- shared_preferences
-Digunakan untuk penyimpanan akun dan session login (username, password, status login).
+- **shared_preferences**  
+  Digunakan untuk penyimpanan akun dan session login (username, password, status login).
 
-- path_provider
-Digunakan untuk menentukan lokasi penyimpanan database SQLite di perangkat.
+- **path_provider**  
+  Digunakan untuk menentukan lokasi penyimpanan database SQLite di perangkat.
 
-- Material Design
-Digunakan sebagai standar desain antarmuka aplikasi.
+- **Material Design**  
+  Digunakan sebagai standar desain antarmuka aplikasi.
 
 ---
 
 ## 📂 Implementasi CRUD
 
 | Operasi | Implementasi |
-|------|-------------|
-| Create | Register User, Tambah Diary |
-| Read | Login User, List Diary |
-| Update | Edit Diary |
-| Delete | Hapus Diary |
-| Storage | SQLite (Local Storage) |
-| Session | SharedPreferences |
-
+|--------|--------------|
+| Create | Registrasi akun (SharedPreferences), Tambah Diary (SQLite) |
+| Read | Login akun (SharedPreferences), Menampilkan List Diary (SQLite) |
+| Update | Edit data Diary (SQLite) |
+| Delete | Hapus Diary (SQLite) |
+| Storage | SQLite (Local Database untuk data diary) |
+| Session | SharedPreferences (Login & Session User) |
 ---
 
 ## 📎 Repository GitHub
