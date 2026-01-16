@@ -110,7 +110,7 @@ Halaman Tentang Aplikasi berfungsi untuk:
 - Menjelaskan latar belakang pembuatan aplikasi
 - Menyediakan informasi pengembang sebagai bentuk identitas dan dokumentasi
 
-📌 **Halaman ini bersifat informatif dan tidak mengolah data**
+📌 **Halaman ini bersifat informatif dan tidak mengolah data**  
 📌 **Tidak terhubung dengan database maupun SharedPreferences**
 
 ![Tentang Aplikasi](screenshots/7tentang_aplikasi.png)
